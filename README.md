@@ -96,6 +96,6 @@ If you are using CentOS make sure you also have the following package installed:
   </tr>
   <tr>
     <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Dovecot-logo.png"></td>
-    <td>This plugin borrows heavily from <a href="https://github.com/dovecot/core/">Dovecot</a> itself particularly for the automatic detection of dovecont-config (see m4/dovecot.m4). The lib-dict and lib-storage were also used as reference material for understanding the Dovecot dictionary and storage API.</td>
+    <td>This plugin borrows heavily from <a href="https://github.com/dovecot/core/">Dovecot</a> itself particularly for the automatic detection of dovecot-config (see m4/dovecot.m4). The lib-dict and lib-storage were also used as reference material for understanding the Dovecot dictionary and storage API.</td>
   </tr>
 </table>
