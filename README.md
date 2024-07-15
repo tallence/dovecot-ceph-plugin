@@ -1,17 +1,17 @@
-Ceph Plugins for Dovecot  [![Build Status](https://travis-ci.org/ceph-dovecot/dovecot-ceph-plugin.svg?branch=travis)](https://travis-ci.org/ceph-dovecot/dovecot-ceph-plugin)
+Ceph Plugins for Dovecot
 ========================
 
 The goal of this project is the creation of a storage plugin for Dovecot, which enables the storage of emails in Ceph RADOS objects. The focus is currently on a hybrid model where the emails are stored in RADOS objects, while all other metadata (lists, index, cache) are stored in a file system that is located locally on the Dovecot server or on shared CephFS volumes. The latter allows the operation of Dovecot completely on Ceph.
 
 As a bonus, a dictionary plugin is included, which allows the storage of Dovecot dictionaries in Ceph OMAPs.
 
-### Disclaimer
+### Status
 
-This project is under active development and not in any kind of release state. Be aware it is possible and very likely that APIs, interfaces and or the data format change at any time before a first release.
+The code is in a tested state. Deutsche Telekom, as sponsor of this project, has subjected the plugin to intensive testing. Failure and stability tests as well as a pilot operation with 1.1 million user accounts were carried out. For this purpose, a production-like installation of Ceph and Dovecot was created. The details can be read in the [detailed report in the wiki](https://github.com/ceph-dovecot/dovecot-ceph-plugin/wiki/Deutsche-Telekom-PoC-Report). 
 
-The code is in a tested state, but is NOT production ready. Although the code is still flagged as experimental, we encourage users to try it out for non-production clusters and non-critical data sets and report their experience, findings and issues.
+The result of these tests was that the previous solution was confirmed as production-ready, both with regard to Ceph itself and especially this plugin. It has not yet been decided whether it will actually be used in production.
 
-It is planned to move all or parts of this code into other git repositories to move these parts later into other open source community projects like Ceph and Dovecot.
+We encourage users to try the Ceph plugin and report their experiences, findings, and problems.
 
 ## RADOS Storage Plugin
 ### The Hybrid Storage Model
@@ -83,19 +83,19 @@ If you are using CentOS make sure you also have the following package installed:
 
 <table border="0">
   <tr>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Telekom_Logo_2013.svg"</td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Telekom_Logo_2013.svg" width="120" height="auto"></td>
     <td>The development of this software is sponsored by Deutsche Telekom. We would like to take this opportunity to thank Deutsche Telekom.</td>
   </tr>
   <tr>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Dovecot-logo.png"</td>
-    <td>This plugin borrows heavily from <a href="https://github.com/dovecot/core/">Dovecot</a> itself particularly for the automatic detection of dovecont-config (see m4/dovecot.m4). The lib-dict and lib-storage were also used as reference material for understanding the Dovecot dictionary and storage API.</td>
-  </tr>
-  <tr>
-    <td><img src="https://www.tallence.com/fileadmin/user_upload/content/Mailing/tallence_logo-email.png"</td>
+    <td><img src="https://www.tallence.com/fileadmin/user_upload/content/Mailing/tallence_logo-email.png" width="700" height="auto"></td>
     <td><a href="https://www.tallence.com/">Tallence</a> carried out the initial development.</td>
   </tr>
   <tr>
-    <td><img src="https://avatars1.githubusercontent.com/u/20288092?v=4&s=100"</td>
+    <td><img src="https://www.42on.com/wp-content/uploads/2022/04/42on-logo-colour.svg" width="120" height="auto"></td>
     <td>Wido den Hollander from <a href="http://www.42on.com">42on.com</a> for all the help and ideas.</td>
+  </tr>
+  <tr>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Dovecot-logo.png"></td>
+    <td>This plugin borrows heavily from <a href="https://github.com/dovecot/core/">Dovecot</a> itself particularly for the automatic detection of dovecot-config (see m4/dovecot.m4). The lib-dict and lib-storage were also used as reference material for understanding the Dovecot dictionary and storage API.</td>
   </tr>
 </table>

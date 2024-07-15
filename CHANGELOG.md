@@ -1,18 +1,15 @@
 # Change Log
-## [0.0.51](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.51) (2023-02-09)
-- fix: not escaped % in i_warning.
 
-## [0.0.50](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.50) (2023-02-02)
-- fix: cleanup ceph-index size calculation
+## Next
+- fix: spelling error in README.md
 
+## [1.0.0](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/1.0.0) (2023-03-23)
+- prod release
 ## [0.0.52](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.52) (2023-02-27)
 - fix: some problems with virtual box and Spica
 
 ## [0.0.51](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.51) (2023-02-09)
 - fix: not escaped % in i_warning.
-
-## [0.0.50](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.50) (2023-02-02)
-- fix: cleanup ceph-index size calculation
 
 ## [0.0.50](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.50) (2023-02-02)
 - fix: cleanup ceph-index size calculation
@@ -28,8 +25,7 @@
        fix save_method 1+2 buffersize (1 byte short) 
        bugfix-355-fix-buffersize-write-method
 
-
-## [0.0.46](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.45) (2022-11-22)
+## [0.0.46](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.46) (2022-11-23)
 - #349 bugfix doveadm rmb create ceph index validate object metadata
 
 ## [0.0.45](https://github.com/ceph-dovecot/dovecot-ceph-plugin/tree/0.0.45) (2022-11-22)
